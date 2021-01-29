@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Registro de usuario en utest" skipped="0" tests="1" time="28.33" timestamp="2021-01-28 02:36:22"><testcase name="Registro exitoso de usuario nuevo"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.bancolombia.certification.utest.tasks.RegistrarInformacionPersonal.performAs(RegistrarInformacionPersonal.java:43)&#13;
+co.com.bancolombia.certification.utest.stepdefinitions.RegistroDeUnUsuarioEnUtestStepDefinitions.completaLaInformacionRequeridaEnElRegistro(RegistroDeUnUsuarioEnUtestStepDefinitions.java:40)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+</system-err></testcase></testsuite>

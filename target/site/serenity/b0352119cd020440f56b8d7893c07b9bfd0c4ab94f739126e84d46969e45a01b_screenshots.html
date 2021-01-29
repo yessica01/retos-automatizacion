@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ee73f767a31d9eff2b0e4124b7158df1cef5c13837364d589a3264a79db64d34.html">Registro De Usuario En Utest</a></span>
+                > <span class="truncate-60"><a
+                    href="b0352119cd020440f56b8d7893c07b9bfd0c4ab94f739126e84d46969e45a01b.html">Registro exitoso de usuario </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 28-01-2021 18:58</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registro De Usuario En Utest </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario nuevo de utest<br />
+Quiero registrarme<br />
+Para podeer usar lso servicios
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="bca18eb34184f466810ee7a90d04748e21a2df6dea7311083e75ce6b8ed2a2f5.html">Tag1
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registro exitoso de usuario
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="31a061163569438cebb5e607ba303185de7b083f21f40602db4d67e81db05e04.png" title=" Dado que yessica desea registrarse en utest" width="1920"/>
+                <img src="31a061163569438cebb5e607ba303185de7b083f21f40602db4d67e81db05e04.png" title=" yessica Abrir el navegador en la p&aacute;gina de utest" width="1920"/>
+                <img src="31a061163569438cebb5e607ba303185de7b083f21f40602db4d67e81db05e04.png" title=" yessica opens the Pagina principal de utest" width="1920"/>
+                <img src="f5a1ea33b88d166373af730211f6ea1c324fec919a87e06d1a161ac95e84dfc7.png" title=" yessica opens the Pagina principal de utest (completed)" width="1920"/>
+                <img src="f5a1ea33b88d166373af730211f6ea1c324fec919a87e06d1a161ac95e84dfc7.png" title=" yessica Abrir el navegador en la p&aacute;gina de utest (completed)" width="1920"/>
+                <img src="f5a1ea33b88d166373af730211f6ea1c324fec919a87e06d1a161ac95e84dfc7.png" title=" Dado que yessica desea registrarse en utest (completed)" width="1920"/>
+                <img src="d591dc831a66aeb6f07fa827dd1aa2a8517954f2907436d361d49b9e4bbc99ba.png" title=" Cuando realiza el registro de la informacion en el formulario" width="1920"/>
+                <img src="d591dc831a66aeb6f07fa827dd1aa2a8517954f2907436d361d49b9e4bbc99ba.png" title=" Yessica registra la informacion personal" width="1920"/>
+                <img src="d591dc831a66aeb6f07fa827dd1aa2a8517954f2907436d361d49b9e4bbc99ba.png" title=" yessica clicks on " width="1920"/>
+                <img src="7194cf940529eb1e0e9aeeb15939ba53e085ceb04fc2e0f76007954f505ac0b3.png" title=" yessica enters 'Yessica' into " width="1920"/>
+                <img src="103d370f62cc798011747d90775cae7bbcc03e0703a3339e1551a62d0c31beb6.png" title=" yessica enters 'Yessica' into  (completed)" width="1920"/>
+                <img src="103d370f62cc798011747d90775cae7bbcc03e0703a3339e1551a62d0c31beb6.png" title=" yessica enters 'Rodriguez' into " width="1920"/>
+                <img src="9ffa22189f0efff57fbf0baa2e96a465ef79fbd6a450fc9321be458966ef850e.png" title=" yessica enters 'Rodriguez' into  (completed)" width="1920"/>
+                <img src="9ffa22189f0efff57fbf0baa2e96a465ef79fbd6a450fc9321be458966ef850e.png" title=" yessica enters 'yarodriguez212@gmail.com' into " width="1920"/>
+                <img src="1ed2f79113e8acdc0d04a600788b8b8a58dfebbaa45cb5d97d2e13ee3312de93.png" title=" yessica enters 'yarodriguez212@gmail.com' into  (completed)" width="1920"/>
+                <img src="1ed2f79113e8acdc0d04a600788b8b8a58dfebbaa45cb5d97d2e13ee3312de93.png" title=" yessica clicks on " width="1920"/>
+                <img src="d86364aa2b3a9b46723a13be2fbd47310f7c84774cf005594f002a57d2aebc51.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="d86364aa2b3a9b46723a13be2fbd47310f7c84774cf005594f002a57d2aebc51.png" title=" yessica clicks on " width="1920"/>
+                <img src="ec3adb51e5002e99e6d12e3faf411002268d4e07a58c7ee339827d592bd09f09.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="ec3adb51e5002e99e6d12e3faf411002268d4e07a58c7ee339827d592bd09f09.png" title=" yessica clicks on " width="1920"/>
+                <img src="0ba9f276b518389cf83670f1d550a9f3636b52a23606773d8cc96410f4d6a56f.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="0ba9f276b518389cf83670f1d550a9f3636b52a23606773d8cc96410f4d6a56f.png" title=" Yessica registra la informacion personal (completed)" width="1920"/>
+                <img src="0ba9f276b518389cf83670f1d550a9f3636b52a23606773d8cc96410f4d6a56f.png" title=" Yessica registra la informacion de localizacion" width="1920"/>
+                <img src="0ba9f276b518389cf83670f1d550a9f3636b52a23606773d8cc96410f4d6a56f.png" title=" yessica clicks on " width="1920"/>
+                <img src="7a1856fe1e754843e522a3be0c8fabf302c945df741c1cb86ba4dc1babcdf9b0.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="6269bd4fc791e6189b0c12dad2556e54b58e16ff48b1533ccc9740464bb6deba.png" title=" yessica enters 'Medell&iacute;n' into " width="1920"/>
+                <img src="3cf1d4ba0ea2b6ef6ffd61806a3cbc2f764f8eedf67ee352ce9f5c0d5e255c4b.png" title=" yessica enters 'Medell&iacute;n' into  (completed)" width="1920"/>
+                <img src="3cf1d4ba0ea2b6ef6ffd61806a3cbc2f764f8eedf67ee352ce9f5c0d5e255c4b.png" title=" yessica clicks on " width="1920"/>
+                <img src="1f5c77e530a429d8751cc49d40090bc84b8f1b98e7370f07a574575013381842.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="1f5c77e530a429d8751cc49d40090bc84b8f1b98e7370f07a574575013381842.png" title=" yessica enters '4553' into " width="1920"/>
+                <img src="fd3474da899ad65c8c29de21ab459de05ac3f570507fc711ae49c6c22f455472.png" title=" yessica enters '4553' into  (completed)" width="1920"/>
+                <img src="fd3474da899ad65c8c29de21ab459de05ac3f570507fc711ae49c6c22f455472.png" title=" Yessica registra la informacion de localizacion (completed)" width="1920"/>
+                <img src="fd3474da899ad65c8c29de21ab459de05ac3f570507fc711ae49c6c22f455472.png" title=" Yessica registra la informacion de dispositivos" width="1920"/>
+                <img src="8eb1d1a99045a21ddeb7146630ff3637c9c7ad699538dd32d835e427e04b3f69.png" title=" yessica clicks on " width="1920"/>
+                <img src="b3fe269950f0e33d822da11b5486d6f5da8751df76a6f830777ff7b63e7773c6.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="b3fe269950f0e33d822da11b5486d6f5da8751df76a6f830777ff7b63e7773c6.png" title=" yessica clicks on " width="1920"/>
+                <img src="93f334e65541f1d05d648f903b4ec6932ec61b0a75007445b23a519b66373d24.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="93f334e65541f1d05d648f903b4ec6932ec61b0a75007445b23a519b66373d24.png" title=" yessica clicks on " width="1920"/>
+                <img src="4240c3fe92f88ab9e03f83750687f69694708c408ab4fe958f768310ed8c7ef3.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="4240c3fe92f88ab9e03f83750687f69694708c408ab4fe958f768310ed8c7ef3.png" title=" yessica clicks on " width="1920"/>
+                <img src="7472b98eca952c0c7f39d9de16498a05147e42f3410f69ec824a1d5b2f59e8f9.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="7472b98eca952c0c7f39d9de16498a05147e42f3410f69ec824a1d5b2f59e8f9.png" title=" yessica clicks on " width="1920"/>
+                <img src="323658774ddaea19ce40c123e87244366c8976c885d718c82947dbc1aea48f20.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="323658774ddaea19ce40c123e87244366c8976c885d718c82947dbc1aea48f20.png" title=" yessica clicks on " width="1920"/>
+                <img src="07278cd018c8e5a4ae0cdea9264ac606f02f57a339183ecdc1becc3e27d2bdfb.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="07278cd018c8e5a4ae0cdea9264ac606f02f57a339183ecdc1becc3e27d2bdfb.png" title=" yessica clicks on " width="1920"/>
+                <img src="68bd60fa04f3fbaf286b4158c000e753b44d88682f7f34c0dcca81d0ca7d941b.png" title=" yessica clicks on  (completed)" width="1920"/>
+                <img src="68bd60fa04f3fbaf286b4158c000e753b44d88682f7f34c0dcca81d0ca7d941b.png" title=" Yessica registra la informacion de dispositivos (completed)" width="1920"/>
+                <img src="68bd60fa04f3fbaf286b4158c000e753b44d88682f7f34c0dcca81d0ca7d941b.png" title=" Cuando realiza el registro de la informacion en el formulario (completed)" width="1920"/>
+                <img src="68bd60fa04f3fbaf286b4158c000e753b44d88682f7f34c0dcca81d0ca7d941b.png" title=" Entonces debiera ver la confirmacion de registro exitoso: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.1.2</span>
+</div>
+</body>
+</html>

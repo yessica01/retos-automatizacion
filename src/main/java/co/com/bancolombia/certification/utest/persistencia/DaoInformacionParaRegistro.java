@@ -1,9 +1,9 @@
 package co.com.bancolombia.certification.utest.persistencia;
 
-import co.com.bancolombia.certification.utest.model.InformacionParaRegistro;
+import co.com.bancolombia.certification.utest.model.InformacionParaElRegistro;
 
 public interface DaoInformacionParaRegistro {
 
-	InformacionParaRegistro getInformacionParaRegistro();
+	InformacionParaElRegistro getInformacionParaRegistro();
 	
 }

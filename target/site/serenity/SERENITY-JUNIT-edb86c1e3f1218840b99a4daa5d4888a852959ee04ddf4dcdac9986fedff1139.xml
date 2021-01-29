@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Registro de usuario en utest" skipped="0" tests="1" time="47.31" timestamp="2021-01-28 03:45:13"><testcase name="Registro exitoso de un usuario"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.bancolombia.certification.utest.tasks.RegistrarInformacionDeLocalizacion.performAs(RegistrarInformacionDeLocalizacion.java:29)&#13;
+co.com.bancolombia.certification.utest.stepdefinitions.RegistroDeUnUsuarioEnUtestStepDefinitios.seRegistraLlenandoElFormularioCorrespondiente(RegistroDeUnUsuarioEnUtestStepDefinitios.java:41)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)&#13;
+</system-err></testcase></testsuite>
